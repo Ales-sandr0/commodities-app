@@ -15,7 +15,7 @@
 <div id="dashboard"></div>
 
 <script>
-const API_KEY='demo';
+const API_KEY='286bfeba350044ee8983c3084d9bef30';
 const symbols=['XAU/USD','XAG/USD','CL','NG','ZC'];
 
 async function fetchPrices(){try{const res=await fetch(`https://api.twelvedata.com/price?symbol=${symbols.join(',')}&apikey=${API_KEY}`);return await res.json()}catch{return{}}}
